@@ -1,103 +1,125 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="space-y-4">
+      <div>
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          width={1600}
+          height={900}
+          alt=""
+          className="w-full rounded-md"
+          src="/banner.webp"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      </div>
+      <div className="space-y-2">
+        <h1 className="text-4xl font-bold">
+          ทางเดินอาหารหรือระบบย่อยอาหาร ทำงานอย่างไร?
+        </h1>
+        <div className="text-muted-foreground flex flex-wrap items-center gap-4">
+          <p>7 มิถุนายน 2025</p>
+          <div className="bg-muted-foreground/50 h-4 w-0.5"></div>
+          <p>งานชีววิทยา</p>
+          <div className="bg-muted-foreground/50 h-4 w-0.5"></div>
+          <p>กลุ่มลาบูบี้</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="space-y-4">
+        <p>
+          การทำงานอย่างมีสปิริตของระบบในร่างกายเราตั้งแต่ ปาก หลอดอาหาร
+          กระเพาะอาหาร ตับ ถุงน้ำดี ลำไส้เล็ก ตับอ่อน ลำไส้ใหญ่ ทวารหนัก
+        </p>
+        <p>
+          เรามาทำความรู้จักกับระบบย่อยอาหารว่ามีอวัยวะส่วนใดบ้างที่มีความเกี่ยวข้อง
+        </p>
+        <p className="text-xl">
+          <b>1. ปาก</b>
+        </p>
+        <p>
+          ประกอบไปด้วย ริมฝีปาก มีฟัน ทำหน้าที่ตัดบดเคี้ยวอาหารให้มีขนาดเล็กลง
+          หรือละเอียด มีลิ้น ทำหน้าที่คลุกเคล้าอาหารร่วมกับน้ำลาย{""}
+          ให้อาหารที่รับประทานไปอ่อนนุ่ม และในน้ำลายจะมี
+          เอนไซม์ที่ช่วยย่อยคาร์โบไฮเดรต ตอนที่เรากลืนอาหารส่งต่อไปยังคอหอย
+          ผ่านไปสู่หลอดอาหาร
+        </p>
+        <p className="text-xl">
+          <b>2. หลอดอาหาร</b>
+        </p>
+        <p>
+          มีลักษณะเป็นท่องผนังซึ่งประกอบด้วย
+          กล้ามเนื้อที่หดและคลายตัวเพื่อรับส่งก้อนอาหารจากปากส่งต่อไปยัง
+          กระเพาะอาหาร
+        </p>
+        <p className="text-xl">
+          <b>3. กระเพาะอาหาร</b>
+        </p>
+        <p>
+          มีลักษณะเป็นถุงรูปตัวเจ รับอาหารต่อมาจากหลอดอาหารและมี หูรูด
+          ที่ส่วนต่อกับหลอดอาหารทำให้อาหารไม่สามารถย้อนกลับทางเดิมได้
+        </p>
+        <div>
+          <p className="font-semibold">ส่วนประกอบของกระเพาะอาหาร</p>
+          <p>
+            - กล้ามเนื้อผนังด้านในขรุขระ มีกรดและเอนไซม์สำหรับย่อยโปรตีน
+            เมื่อผ่านการย่อยให้เป็นของเหลวข้นในกระเพาะอาหาร
+          </p>
+          <p>
+            -
+            ส่วนปลายของกระเพาะอาหารจะกับลำไส้เล็กและมีหูรูดที่ควบคุมการเคลื่อนที่ของอาหาร
+            จากกระเพาะหารไปต่อไปยังลำไส้เล็ก
+            การหดตัวและคลายตัวของกล้ามเนื้อที่ผนัง
+            นอกจากจะทำให้อาหารมีขนาดเล็กลงและคลุกเคล้ากับกรอดและเอนไซม์ได้ดีแล้วยังมีส่วนช่วยในการดันให้อาหารผ่านหูรูดไปยังลำไส้เล็กต่อไปได้อีก
+          </p>
+        </div>
+        <p className="text-xl">
+          <b>4. ลำไส้เล็ก</b>
+        </p>
+        <p>
+          เป็นอวัยวะที่ต่อจากกระเพาะอาหาร มีลักษณะเป็นท่อยาวขดไปมาอยู่ในช่องท้อง
+          เป็นอวัยวะสุดท้ายในทางเดินอาหารที่มีกระบวนการย่อยอาหาร
+          เมื่ออาหารเคลื่อนที่ผ่านลำไส้เล็กจะมีเอนไซม์จากลำไส้เล็กมาย่อยดปรตีน
+          คาร์โบไฮเดรต ไขมัน โดยจะทำงานร่วมกันกับน้ำดีจากตับและเอนไซม์จากตับอ่อน
+          ซึ่งการย่อยอาหารจะเสร็จสิ้นที่ลำไส้เล็ก
+          นอกจากนี้ลำไส้เล็กยังมีหน้าที่สำคัญในการดูดซึมสารอาหารทุกประเภทอีกด้วย
+          ทั้งโปรตีนคาร์ไบไฮเดรต ไขมัน น้ำ
+          รวมทั้งเกลือแร่และวิตามินที่ละลายออกมาจากอาหาร
+          ทั้งหมดจะถูดดูดซึมเข้าสู่หลอดเลือดและท่อน้ำเหลืองบริเวณผนังด้านในของลำไส้เล็ก
+          ซึ่งมีลักษณะยื่นออกมาคล้ายนิ้วมือขนาดเล็กเป็นจำนวนมาก
+        </p>
+        <p className="text-xl">
+          <b>5. ลำไส้ใหญ่</b>
+        </p>
+        <p>
+          มีลักษณะเป็นท่อ
+          มีหน้าที่ดูซึมน้ำและเกลือแร่จากกากอาหารที่ย่อไม่ได้หรือย่อยไม่หมดจากลำไส้เล็กทำให้กากอาหารมีความแข็งตัวขึ้นส่วนของปลายลำไส้ใหญ่มีลักษณะตรงเป็นที่เก็บรวบรวมกากอาหารก่อนส่งไปยังทวารหนัก
+        </p>
+        <p className="text-xl">
+          <b>6. ทวารหนัก</b>
+        </p>
+        <p>
+          เป็นช่องเปิดที่อยู่ส่วนท้ายสุดของทางเดินอาหาร ทำหน้าขับกากอาหาร
+          หรือที่เราเรียกว่าอุจาระ ออกสู่ภายนอกร่างกาย
+        </p>
+        <p className="text-xl">
+          <b>7. ตับอ่อน</b>
+        </p>
+        <p>
+          มีลักษณะคล้ายใบไม้ มีตำแหน่งอยู่ด้านหลังของกระเพาะอาหาร
+          ตับอ่อนไม่ได้เป็นทางผ่านของอาหาร
+          แต่มีหน้าที่เกี่ยวข้องกับการย่อยอาหารโดยสร้างเอนไซม์ส่งไปยังลำไส้เล็กเพื่อช่วยย่อยโปรตีน
+          คาร์โบไฮเดรต และไขมัน
+        </p>
+        <p className="text-xl">
+          <b>7. ตับและถุงน้ำดี</b>
+        </p>
+        <p>
+          เป็นอวัยที่มีขนาดใหญ่ที่สุดในบรรดาอวัยวะในช่องท้อง
+          ไม่ได้เป็นทางผ่านอาหาร
+          แต่มีหน้าที่เกี่ยวข้องกับการย่อยอาหารโดยสร้างน้ำดีส่งไปเก็บที่ถุงน้ำดี
+          มีลักษณะเป็นถุงมีท่อต่อไปยังสำไล้เล็กส่วนต้น
+          น้ำดีช่วยในการแตกตัวของไขมันในอาหาร
+        </p>
+      </div>
     </div>
   );
 }

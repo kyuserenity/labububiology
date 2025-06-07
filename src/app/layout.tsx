@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Prompt } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const prompt = Prompt({
+  subsets: ["thai"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,11 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="th">
+      <body className={cn("antialiased select-none", prompt.className)}>
+        <header className="bg-background sticky top-0 z-30 flex items-center justify-center p-6">
+          <div className="flex items-center gap-2">
+            <p className="text-2xl font-bold">สาระมีอยู่จริง</p>
+          </div>
+        </header>
+        <main className="mx-auto mb-6 max-w-lg px-6">{children}</main>
       </body>
     </html>
   );
