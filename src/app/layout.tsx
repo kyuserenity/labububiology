@@ -27,7 +27,7 @@ export default function RootLayout({
             <p className="text-2xl font-bold">สาระมีอยู่จริง</p>
           </div>
         </header>
-        <main className="mx-auto mb-6 max-w-lg px-6">{children}</main>
+        <main className="mx-auto mb-24 max-w-lg px-6">{children}</main>
       </body>
     </html>
   );
