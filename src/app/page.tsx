@@ -44,7 +44,7 @@ export default function Page() {
         </h2>
         <img
           className="w-full rounded-md"
-          src="https://www.scimath.org/images/uploads/upload2/hwkb17_073_002.jpg"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRepg-8guCe8OlCCKOFgg-sCnk7Vt8U5rNDXEul04kIA7ztAYAMG6xUIIK2&s=10"
           alt=""
         />
         <p>
