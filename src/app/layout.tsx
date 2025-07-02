@@ -10,8 +10,7 @@ const prompt = Prompt({
 });
 
 export const metadata: Metadata = {
-  title: "สาระมีอยู่จริง",
-  description: "เว็บไซต์ที่รวบรวมสาระความรู้ต่างๆ ที่คุณอาจไม่เคยรู้มาก่อน",
+  title: "Digestive system",
 };
 
 export default function RootLayout({

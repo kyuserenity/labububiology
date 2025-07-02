@@ -1,21 +1,18 @@
 "use client";
 
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function Page() {
   return (
     <div className="space-y-4">
       <div>
-        <Image
-          width={1600}
-          height={900}
-          alt=""
-          className="w-full rounded-md"
-          src="/banner.webp"
+        <img
+          className="aspect-video w-full rounded-md object-cover"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRepg-8guCe8OlCCKOFgg-sCnk7Vt8U5rNDXEul04kIA7ztAYAMG6xUIIK2&s=10"
         />
       </div>
       <div className="space-y-2">
@@ -44,7 +41,7 @@ export default function Page() {
         </h2>
         <img
           className="w-full rounded-md"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRepg-8guCe8OlCCKOFgg-sCnk7Vt8U5rNDXEul04kIA7ztAYAMG6xUIIK2&s=10"
+          src="https://www.scimath.org/images/uploads/upload2/hwkb17_073_002.jpg"
           alt=""
         />
         <p>
@@ -321,10 +318,7 @@ export default function Page() {
           <p>6. สร้างน้ำเหลืองประกอบด้วยเม็ดเลือดขาว ภูมิคุ้มกัน</p>
         </section>
         <hr />
-        <img
-          className="w-full rounded-md"
-          src="https://media.istockphoto.com/id/1401150101/th/%E0%B9%80%E0%B8%A7%E0%B8%84%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C/%E0%B8%95%E0%B8%B1%E0%B8%9A%E0%B8%AD%E0%B9%88%E0%B8%AD%E0%B8%99-%E0%B9%80%E0%B8%A7%E0%B8%81%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%A7%E0%B8%B4%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%AD%E0%B8%A7%E0%B8%B1%E0%B8%A2%E0%B8%A7%E0%B8%B0%E0%B8%A0%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%99%E0%B8%B8%E0%B8%A9%E0%B8%A2%E0%B9%8C%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%9A%E0%B8%99%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B5%E0%B8%82%E0%B8%B2%E0%B8%A7-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%81%E0%B8%9A%E0%B8%99.jpg?s=612x612&w=0&k=20&c=s5OgMK5NJp7ot6XQqcpZFr0qUXar9d_KFUd01F9_a5o="
-        />
+        <img className="w-full rounded-md" src="" />
         <p>
           2. <b>ตับอ่อน</b> (Pancreas) มีลักษณะคล้ายใบไม้ยาวประมาณ 20-25 ซม.
           สีแดงหรือสีเทา มีต่อเปิดสู่ส่วนโค้งของดูโอดีนัม
@@ -342,6 +336,104 @@ export default function Page() {
         <section>
           <QuizSection />
         </section>
+
+        <hr className="border-foreground" />
+
+        <iframe
+          width="560"
+          height="315"
+          className="w-full rounded-md"
+          src="https://www.youtube.com/embed/chaQpz9EXtU?si=pdLTeTscphxvTLNK&amp;controls=0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          className="w-full rounded-md"
+          src="https://www.youtube.com/embed/Og5xAdC8EUI?si=uBIdVuFxjCj1Rjx0&amp;controls=0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          className="w-full rounded-md"
+          src="https://www.youtube.com/embed/P4hHgUvUHk4?si=GPElcZoqavfK31co&amp;controls=0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        <section className="rounded-md border p-4">
+          <div className="space-y-2">
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: 0,
+                paddingTop: "56.25%",
+                paddingBottom: 0,
+                overflow: "hidden",
+                borderRadius: 8,
+                willChange: "transform",
+              }}
+            >
+              <iframe
+                loading="lazy"
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "100%",
+                  top: 0,
+                  left: 0,
+                  border: "none",
+                  padding: 0,
+                  margin: 0,
+                }}
+                src="https://www.canva.com/design/DAGr6_AnRFY/sAJWdVfzRbSeEEHaAJW8dQ/view?embed"
+                allowFullScreen
+                allow="fullscreen"
+              ></iframe>
+            </div>
+
+            <Button
+              className="h-auto w-full justify-start overflow-hidden p-0"
+              variant="link"
+              asChild
+            >
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfOuP_5Dps205ivcrQG54Xoxc9X_2KKK5Ldd9afjZxM-UOTUA/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ลิงค์ : แบบทดสอบก่อนเรียน
+              </Link>
+            </Button>
+          </div>
+        </section>
+        <div>
+          <p>
+            <b>ที่มา</b>
+          </p>
+
+          <Button
+            className="h-auto w-full justify-start overflow-hidden p-0"
+            variant="link"
+            asChild
+          >
+            <Link
+              href="https://www.scimath.org/lesson-biology/item/7036-digestive-system-7036"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://www.scimath.org/lesson-biology/item/7036-digestive-system-7036{" "}
+            </Link>
+          </Button>
+        </div>
       </div>
     </div>
   );
@@ -449,7 +541,7 @@ function QuizSection() {
   return (
     <div
       className={cn(
-        "mt-8 rounded-md border p-4",
+        "rounded-md border p-4",
         submitted ? (isCorrect ? "border-green-600" : "border-red-600") : null,
       )}
     >
